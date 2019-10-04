@@ -9,7 +9,6 @@ const useData = () => {
     useEffect(() => {
         axios.get(playersAPi)
         .then(res => {
-            console.log("Response from server",res);
             setPlayers(res.data);
         })
         .catch(err => {

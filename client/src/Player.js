@@ -7,7 +7,6 @@ class Player extends Component {
         super(props);
     }
     render() {
-        console.log("players props",this.props.player)
         return(<div style={{border: "2px solid green", margin: "1em"}} key={this.props.player.id}>
             <h1 style={{fontSize:"1.1em"}}>Name: {this.props.player.name} </h1>
             <h1 style={{fontSize:"1.1em"}}>Country: {this.props.player.country} </h1>

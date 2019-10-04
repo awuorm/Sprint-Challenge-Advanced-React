@@ -7,10 +7,9 @@ class Players extends Component {
         super(props);
     }
     render() {
-        console.log("players props",this.props.players)
         return(<div>{
             this.props.players.map((player) => 
-                <Player player={player}/>
+                <Player key={player.id} player={player}/>
             )
         }</div>)
     }
